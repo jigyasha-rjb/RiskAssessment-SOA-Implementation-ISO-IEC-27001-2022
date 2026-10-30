@@ -59,7 +59,7 @@ flowchart TD
 
 ---
 
-## 2. Google Sheets Sub-Sheet Navigation & Sequence Guide
+## 2. Google Sheets Sub-Sheet Navigation
 
 | Sequence | Sub-Sheet Name | Operational Purpose & Module Scope | Direct Worksheet Access |
 | :---: | :--- | :--- | :---: |
@@ -96,7 +96,7 @@ $$\text{Risk Score} = \text{Likelihood Rating } (1\text{ to }5) \times \text{Imp
 * **Data Classification Scheme:** Applies four explicit operational tiers: Internal, Public, Confidential, and Highly Confidential.
 
 ![Asset Register Spreadsheet Screenshot](./assets/asset_register.png)
-
+[Asset Register Sub-Sheet](https://docs.google.com/spreadsheets/d/1PPMZQVXTQhz8DKIAwHHggz9KAD7tEDyKcwcaf-pHMbA/edit?gid=0#gid=0)
 ---
 
 ### Module 02: Risk Evaluation Criteria (`Tab 02`)
@@ -107,6 +107,7 @@ $$\text{Risk Score} = \text{Likelihood Rating } (1\text{ to }5) \times \text{Imp
 * **Risk Acceptance Criteria & Decision Matrix:** Maps risk scores into 4 actionable governance tiers: Low (1–4), Medium (5–9), High (10–14), and Critical (15–25), assigning explicit sign-off authorities (Risk Owner, IS Manager, CISO, Board Risk Committee).
 
 ![Risk Evaluation Criteria Screenshot](./assets/risk_evaluation_criteria.png)
+[Risk Evaluation Criteria Sub-Sheet](https://docs.google.com/spreadsheets/d/1PPMZQVXTQhz8DKIAwHHggz9KAD7tEDyKcwcaf-pHMbA/edit?gid=1498523204#gid=1498523204)
 
 ---
 
@@ -122,6 +123,7 @@ $$\text{Risk Score} = \text{Likelihood Rating } (1\text{ to }5) \times \text{Imp
   * `RISK-011`: Unauthenticated domain admin access due to missing MFA (Score: 15 - Critical).
 
 ![Risk Register Spreadsheet Screenshot](./assets/risk_register.png)
+[Risk Register Sub-Sheet](https://docs.google.com/spreadsheets/d/1PPMZQVXTQhz8DKIAwHHggz9KAD7tEDyKcwcaf-pHMbA/edit?gid=43526990#gid=43526990)
 
 ---
 
@@ -133,6 +135,7 @@ $$\text{Risk Score} = \text{Likelihood Rating } (1\text{ to }5) \times \text{Imp
 * **Accountability & Residual Risk Modeling:** Assigns dedicated Treatment Owners (Head of Operations, Head of IT Infrastructure, CISO) and target completion dates while projecting reduced residual likelihood, residual impact, and target residual risk levels ($\le 10$).
 
 ![Risk Treatment Plan Screenshot](./assets/risk_treatment_plan.png)
+[Risk Treatment Plan Sub-Sheet](https://docs.google.com/spreadsheets/d/1PPMZQVXTQhz8DKIAwHHggz9KAD7tEDyKcwcaf-pHMbA/edit?gid=1519275738#gid=1519275738)
 
 ---
 
@@ -145,6 +148,7 @@ $$\text{Risk Score} = \text{Likelihood Rating } (1\text{ to }5) \times \text{Imp
 * **Implementation Status Tracking:** Categorizes current deployment progress across the organization (66 Fully Implemented, 27 Partially Implemented).
 
 ![Statement of Applicability Dashboard Screenshot](./assets/soa.png)
+[Stateent of Applicability (SoA) Sub-Sheet](https://docs.google.com/spreadsheets/d/1PPMZQVXTQhz8DKIAwHHggz9KAD7tEDyKcwcaf-pHMbA/edit?gid=1904216334#gid=1904216334)
 
 ---
 
