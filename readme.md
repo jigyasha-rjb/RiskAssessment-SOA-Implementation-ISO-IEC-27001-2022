@@ -61,8 +61,6 @@ flowchart TD
 
 ## 2. Google Sheets Sub-Sheet Navigation & Sequence Guide
 
-Worksheets are processed in a strict logical sequence: **Asset Taxonomy → Evaluation Criteria → Threat & Risk Assessment → Treatment Execution → Control Traceability.**
-
 | Sequence | Sub-Sheet Name | Operational Purpose & Module Scope | Direct Worksheet Access |
 | :---: | :--- | :--- | :---: |
 | **Tab 01** | **`Asset Register`** | Catalogs 30 core banking assets across hardware, software, data, site/facilities, network, and personnel, establishing CIA triad priorities and asset ownership. | [Open Sub-Sheet](https://docs.google.com/spreadsheets/d/1PPMZQVXTQhz8DKIAwHHggz9KAD7tEDyKcwcaf-pHMbA/edit?gid=0#gid=0) |
