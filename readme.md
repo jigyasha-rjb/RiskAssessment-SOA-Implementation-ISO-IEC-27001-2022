@@ -33,28 +33,48 @@
 > **Implementation Scope Note:** All underlying evaluation datasets, dynamic matrix calculations, and control traceability registers are managed directly within live Google Sheets workbooks and mirrored here for audit review.
 
 ```mermaid
+%%{init: {
+  "flowchart": {
+    "rankSpacing": 30,
+    "nodeSpacing": 25,
+    "curve": "basis"
+  }
+}%%
 flowchart TD
-    subgraph Phase_1[1. Asset Register]
-        A1[30 Enterprise Assets Mapped] --> A2[CIA Priority Assignment]
-        A2 --> A3[Ownership & Location Tagging]
+    subgraph Assessment_Column[Assessment & Evaluation]
+        direction TD
+        
+        subgraph Phase_1[1. Asset Register]
+            A1[30 Enterprise Assets Mapped] --> A2[CIA Priority Assignment]
+            A2 --> A3[Ownership & Location Tagging]
+        end
+
+        subgraph Phase_2[2. Criteria & Assessment]
+            B1[Risk Evaluation Criteria] --> B2[Risk Register: 24 Scenarios]
+            B2 --> B3[5x5 Inherent Risk Scoring]
+        end
+
+        Phase_1 --> Phase_2
     end
 
-    subgraph Phase_2[2. Criteria & Assessment]
-        B1[Risk Evaluation Criteria] --> B2[Risk Register: 24 Identified Risks]
-        B2 --> B3[5x5 Likelihood x Impact Inherent Scoring]
+    subgraph Governance_Column[Treatment & Compliance]
+        direction BT
+        
+        subgraph Phase_4[4. Statement of Applicability]
+            D1[93 Controls Evaluated] --> D2[Justification & Status Tracking]
+            D2 --> D3[Audit-Ready Traceability]
+        end
+
+        subgraph Phase_3[3. Risk Treatment Plan]
+            C1[Mitigate / Transfer / Accept] --> C2[Annex A Control Mapping]
+            C2 --> C3[Residual Risk & SLAs]
+        end
+
+        Phase_3 --> Phase_4
     end
 
-    subgraph Phase_3[3. Risk Treatment Plan]
-        C1[Mitigate / Transfer / Accept Selection] --> C2[Annex A Control Mapping]
-        C2 --> C3[Residual Risk Calculation & SLA Assignment]
-    end
-
-    subgraph Phase_4[4. Statement of Applicability]
-        D1[93 Annex A Control Evaluation] --> D2[Justification & Status Tracking]
-        D2 --> D3[Audit-Ready Traceability Matrix]
-    end
-
-    Phase_1 --> Phase_2 --> Phase_3 --> Phase_4
+    %% Down-to-Up Crossover Bridge
+    Phase_2 ==> Phase_3
 ```
 
 ---
@@ -97,6 +117,7 @@ $$\text{Risk Score} = \text{Likelihood Rating } (1\text{ to }5) \times \text{Imp
 
 ![Asset Register Spreadsheet Screenshot](./assets/asset_register.png)
 [Asset Register Sub-Sheet](https://docs.google.com/spreadsheets/d/1PPMZQVXTQhz8DKIAwHHggz9KAD7tEDyKcwcaf-pHMbA/edit?gid=0#gid=0)
+
 ---
 
 ### Module 02: Risk Evaluation Criteria (`Tab 02`)
