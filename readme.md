@@ -7,7 +7,7 @@
 
 ---
 
-### Document Control & Governance Header
+### Document Header
 
 | Metadata Field | Document Attribute |
 | :--- | :--- |
@@ -20,7 +20,7 @@
 
 ---
 
-## 1. Scope & System Architecture
+## 1. Project Scope
 
 ### Core Project Scope
 
