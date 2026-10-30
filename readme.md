@@ -35,12 +35,12 @@
 ```mermaid
 %%{init: {
   "flowchart": {
-    "rankSpacing": 30,
-    "nodeSpacing": 25,
+    "rankSpacing": 40,
+    "nodeSpacing": 30,
     "curve": "basis"
   }
 }%%
-flowchart TD
+flowchart LR
     subgraph Assessment_Column[Assessment & Evaluation]
         direction TD
         
@@ -58,23 +58,23 @@ flowchart TD
     end
 
     subgraph Governance_Column[Treatment & Compliance]
-        direction BT
+        direction TD
         
-        subgraph Phase_4[4. Statement of Applicability]
-            D1[93 Controls Evaluated] --> D2[Justification & Status Tracking]
-            D2 --> D3[Audit-Ready Traceability]
-        end
-
         subgraph Phase_3[3. Risk Treatment Plan]
             C1[Mitigate / Transfer / Accept] --> C2[Annex A Control Mapping]
             C2 --> C3[Residual Risk & SLAs]
         end
 
+        subgraph Phase_4[4. Statement of Applicability]
+            D1[93 Controls Evaluated] --> D2[Justification & Status Tracking]
+            D2 --> D3[Audit-Ready Traceability]
+        end
+
         Phase_3 --> Phase_4
     end
 
-    %% Down-to-Up Crossover Bridge
-    Phase_2 ==> Phase_3
+    %% Horizontal connection linking Column 1 to Column 2
+    Assessment_Column --> Governance_Column
 ```
 
 ---
