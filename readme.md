@@ -103,10 +103,10 @@ $$\text{Risk Score} = \text{Likelihood Rating } (1\text{ to }5) \times \text{Imp
 
 ### Module 02: Risk Evaluation Criteria (`Tab 02`)
 
-* **Likelihood Scale (1 to 5):** Establishes explicit qualitative and quantitative boundaries ranging from 1 (Rare: exceptional circumstances / no sectoral precedent) to 5 (Almost Certain: routine occurrence or currently active threat).
+* **Likelihood Scale (1 to 5):** Establishes explicit qualitative and quantitative boundaries ranging from 1 (Rare: exceptional circumstances) to 5 (Almost Certain: routine occurrence or currently active threat).
 * **Impact Scale (1 to 5):** Standardizes financial loss and operational disruption thresholds, defining 1 (Negligible: zero disruption), 3 (Moderate: NPR 1–10M loss or service outage under 4 hours), up to 5 (Severe: NPR >50M loss, core system outage >4 hours, or large-scale customer PII breach).
 * **$5 \times 5$ Risk Matrix Modeling:** Constructs a $25$-point quantitative risk matrix intersecting Likelihood and Impact ratings to determine inherent risk scores.
-* **Risk Acceptance Criteria & Decision Matrix:** Maps risk scores into 4 actionable governance tiers: Low (1–4), Medium (5–9), High (10–14), and Critical (15–25), assigning explicit sign-off authorities (Risk Owner, IS Manager, CISO, Board Risk Committee) and mandatory review cadence.
+* **Risk Acceptance Criteria & Decision Matrix:** Maps risk scores into 4 actionable governance tiers: Low (1–4), Medium (5–9), High (10–14), and Critical (15–25), assigning explicit sign-off authorities (Risk Owner, IS Manager, CISO, Board Risk Committee).
 
 ![Risk Evaluation Criteria Screenshot](./assets/risk_evaluation_criteria.png)
 
@@ -146,7 +146,7 @@ $$\text{Risk Score} = \text{Likelihood Rating } (1\text{ to }5) \times \text{Imp
 * **Bi-Directional Traceability:** Links 27 specific controls directly back to corresponding Risk IDs (`RISK-001` through `RISK-024`) and Treatment Plan actions.
 * **Implementation Status Tracking:** Categorizes current deployment progress across the organization (66 Fully Implemented, 27 Partially Implemented).
 
-![Statement of Applicability Dashboard Screenshot](./assets/soa_dashboard.png)
+![Statement of Applicability Dashboard Screenshot](./assets/soa.png)
 
 ---
 
